@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+  <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url('../../static/assets/img/santa/greg_with_baby.jpg'); background-position-y: 1200px !important;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h2 class="title">Santa's Blog: Ringing in the Off Season</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+{% if posts %}
+            {% for post in posts %}
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card card-raised card-background" style="background-image: url('{{ post.photo_main.url }}'); background-position-y: 1550px !important;">
+              <div class="card-body">
+                <h6 class="card-category text-info">{{ posts.author }}</h6>
+                <a href="#pablo">
+                  <h3 class="card-title">{{ post.title }}</h3>
+                </a>
+                <p class="card-description">
+                 A day in the wet snow.
+                </p>
+                <a href="{% url 'post' post.id %}" class="btn btn-danger btn-round">
+                  <i class="material-icons">format_align_left</i> Read Post
+                </a>
+              </div>
+            </div>
+          </div>
+
+            {% endfor %}
+            {% else %}
+          <div class="col-md-12">
+            <p>No Posts Available</p>
+          </div>
+        {% endif %}
+
+          <div class="col-md-12">
+            <div class="card card-raised card-background" style="background-image: url('media/{{ post.photo_main.url }}')">
+              <div class="card-body">
+                <h6 class="card-category text-info">Marketing</h6>
+                <h3 class="card-title">0 to 100.000 Customers in 6 months</h3>
+                <p class="card-description">
+                  Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                </p>
+                <a href="#pablo" class="btn btn-warning btn-round">
+                  <i class="material-icons">subject</i> Read Case Study
+                </a>
+                <a href="#pablo" class="btn btn-white btn-just-icon btn-link" title="" rel="tooltip" data-original-title="Save to Pocket">
+                  <i class="fa fa-get-pocket"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h3 class="title text-center">You may also be interested in</h3>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-plain card-blog">
+              <div class="card-header card-header-image">
+                <a href="#pablo">
+                  <img class="img img-raised" src="../../static/assets/img/bg5.jpg">
+                </a>
+              </div>
+              <div class="card-body">
+                <h6 class="card-category text-info">Enterprise</h6>
+                <h4 class="card-title">
+                  <a href="#pablo">Autodesk looks to future of 3D printing with Project Escher</a>
+                </h4>
+                <p class="card-description">
+                  Like so many organizations these days, Autodesk is a company in transition. It was until recently a traditional boxed software company selling licenses.<a href="#pablo"> Read More </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-plain card-blog">
+              <div class="card-header card-header-image">
+                <a href="#pablo">
+                  <img class="img img-raised" src="../../static/assets/img/examples/blog5.jpg">
+                </a>
+              </div>
+              <div class="card-body">
+                <h6 class="card-category text-success">
+                  Startups
+                </h6>
+                <h4 class="card-title">
+                  <a href="#pablo">Lyft launching cross-platform service this week</a>
+                </h4>
+                <p class="card-description">
+                  Like so many organizations these days, Autodesk is a company in transition. It was until recently a traditional boxed software company selling licenses.<a href="#pablo"> Read More </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-plain card-blog">
+              <div class="card-header card-header-image">
+                <a href="#pablo">
+                  <img class="img img-raised" src="../../static/assets/img/examples/blog6.jpg">
+                </a>
+              </div>
+              <div class="card-body">
+                <h6 class="card-category text-danger">
+                  <i class="material-icons">trending_up</i> Enterprise
+                </h6>
+                <h4 class="card-title">
+                  <a href="#pablo">6 insights into the French Fashion landscape</a>
+                </h4>
+                <p class="card-description">
+                  Like so many organizations these days, Autodesk is a company in transition. It was until recently a traditional boxed software company selling licenses.<a href="#pablo"> Read More </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="team-5 section-image" style="background-image: url('../../static/assets/img/bg10.jpg')">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card card-profile card-plain">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="card-header card-header-image">
+                    <a href="#pablo">
+                      <img class="img" src="../../static/assets/img/santa/image000000.jpg">
+                    </a>
+                    <div class="ripple-container"></div>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h4 class="card-title">Greg Smith</h4>
+                    <h6 class="card-category text-muted">Santa of the Month</h6>
+                    <p class="card-description">
+                      Don't be scared of the truth because we need to restart the human foundation in truth...
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+                      <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+                      <i class="fa fa-google"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="title">Get Tips &amp; Tricks every Week!</h3>
+            <p class="description">
+              Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="card card-plain card-form-horizontal">
+              <div class="card-body">
+                <form method="" action="">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="material-icons">mail</i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Your Email...">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <button type="button" class="btn btn-primary btn-round btn-block">Subscribe</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

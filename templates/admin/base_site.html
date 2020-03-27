@@ -1,0 +1,13 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block branding %}
+<h1 id="head">
+North Star Santa Admin
+<img src="{% static 'assets/img/santa/neon_santa.jpg' %}" alt="neon santa" class="brand_img" height="50", width="50">
+</h1>
+{% endblock %}
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'assets/css/admin.css' %}">
+
+{% endblock %}

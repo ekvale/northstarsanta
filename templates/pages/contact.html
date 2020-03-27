@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="page-header header-filter" data-parallax="true" style="background-image: url('../../static/assets/img/santa/santa_chair.jpeg')"></div>
+<div class="contactus-2">
+        <div id="contactUs2Map" class="map"></div>
+        <div class="col-md-6">
+          <div class="card card-contact card-raised">
+            <form id="contact-form2" method="post">
+              <div class="card-header card-header-rose text-center">
+                <h4 class="card-title">Contact Us</h4>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="info info-horizontal">
+                      <div class="icon icon-rose">
+                        <i class="material-icons">phone</i>
+                      </div>
+                      <div class="description">
+                        <h5 class="info-title">Phone an Elf</h5>
+                        <p> Santa Greg
+                          <br> (218)-751-6644
+                          <br> Mon - Fri, 8:00-6:00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="info info-horizontal">
+                      <div class="icon icon-rose">
+                        <i class="material-icons">pin_drop</i>
+                      </div>
+                      <div class="description">
+                        <h5 class="info-title">Send a Letter</h5>
+                        <p> 101 Santa Claus Lane,
+                          <br> 782 North Pole,
+                          <br> Antartica
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group label-floating is-empty has-rose">
+                      <label class="bmd-label-floating">Full Name</label>
+                      <input type="text" name="email" class="form-control">
+                      <span class="material-input"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group label-floating is-empty has-rose">
+                      <label class="bmd-label-floating">Email address</label>
+                      <input type="email" name="email" class="form-control">
+                      <span class="material-input"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group label-floating has-rose is-empty">
+                  <label for="exampleMessage" class="bmd-label-floating">Your Message</label>
+                  <textarea name="message" class="form-control" id="exampleMessage" rows="6"></textarea>
+                  <span class="material-input"></span>
+                </div>
+              </div>
+              <div class="card-footer justify-content-between">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value=""> I'm not a robot
+                    <span class="form-check-sign">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-rose pull-right">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+{% endblock %}

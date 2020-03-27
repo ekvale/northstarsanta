@@ -6,3 +6,9 @@ def index(request):
 
 def about(request):
     return render(request, 'pages/about.html')
+
+def template(request):
+    return render(request, 'pages/template.html')
+
+def contact(request):
+    return render(request, 'pages/contact.html')
